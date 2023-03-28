@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main () {
+int a , b, c ;
+printf("enter the three numbers ") ;
+scanf("%d%d%d",&a,&b,&c);
+
+if (a>b) {
+    if(a>c) {
+    printf(" the first number isgrreatest of all nujmbers %d",a) ;
+    
+    }
+}
+else if (b>a) {
+    if (b>c){
+        printf("\n the second number is the gretest of all numbers %d",b);
+        
+    }
+}
+else if(c>a) {
+    if (c>b) {
+        printf("\n the third number is the greatest of all numbers %d",c) ;
+    }
+}
+else ("enter the valid number") ;
+return 0 ;
+}
