@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+    
+     int a , b ;
+   
+     char op ;
+     printf("enter the specified operator_= \n") ;
+     scanf("%c",&op);
+     printf ("enter the two numbers \n") ;
+     scanf("%d%d",&a,&b);
+     
+    
+     if (op == '+') {
+         printf("the addition of two numbers is %d",a+b);
+     }
+     else if (op == '*') {
+         printf("the multiplication of two numbers is %d",a*b);
+     } else if (op == '-') {
+         printf("the sustraction of those two numgbgwrs is %d",a-b) ;
+        
+     } else if (op == '/') {
+         printf ("the division of two numbers %d",a/b);
+     }
+     else printf ("enter the valid operator function ") ;
+    
+    return 0 ;
+    
+}
