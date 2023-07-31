@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(){
+    
+  int i,n;
+//   printf("enter the number of integers ");
+ //scanf("%d",&n);
+  
+  int *ptr = (int*)malloc(2*sizeof(int));
+  
+  for(i=0;i<2;i++){
+      printf("number   _");
+      scanf("%d",ptr+i);
+  }
+  for (i=0;i<2;i++){
+      printf("%d\n",*(ptr+i));
+  }
+  
+  ptr = (int*)realloc(ptr,4*sizeof(int));
+  for(i=0;i<2;i++){
+      scanf("%d",ptr+i);
+  }
+  for(i=0;i<2;i++){
+      printf("%d\n",*(ptr+i));
+  }
+  
+}
