@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+struct node {
+    int data ;
+    int num;
+    struct node *link ;
+};
+
+int main(){
+    struct node *head = malloc(sizeof(struct node));
+    head->data= 909;
+    head->num=10;
+    head->link= NULL;
+    
+   // printf("%d", head->data);
+    struct node *current = malloc(sizeof(struct node));
+    current -> data = 29;
+    current-> num = 20;
+    head -> link= current;
+    
+       printf("%d\n", current->data);
+           printf("%d", head->data);
+
+return 0 ;
+}
