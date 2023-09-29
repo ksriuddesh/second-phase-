@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+struct node {
+    int data ;
+    struct node* left ;
+    struct node* right; 
+};
+
+struct node* newnode(int data )
+{
+    struct node* node = (struct node*)malloc(sizeof(struct node));
+    node->data = data ;
+    node->left = NULL;
+    node->right = NULL ;
+    return(node);
+}
+void inorder(struct node* node){
+    if(node!=NULL){
+        inorder(node->left);
+         printf("%d",node->data);
+        inorder(node->right);
+    }
+}
+
+int main() {
+    struct node* root= newnode(1);
+    root-> left = newnode(2);
+    root->right = newnode(99);
+    root->left->right= newnode(9);
+    printf("inorder root ");
+    inorder(root);
+    return 0 ;
+    
+    
+}
